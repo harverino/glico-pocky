@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACC 05</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wave">
+            <img src="img/bg-red.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Novidades</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Nos contate</a></li>
+            </ul>
+            <div class= logo> <img src="img/mini-logo.png" alt="logo"> </div>
+        </nav>
+
+        <div class="main-content">
+
+          <div class="image-pista">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/poki-chocf1.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/poki.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/poki-nanaf1.png" alt=""></div>
+              </div> 
+            </div>
+          </div>
+          <div class="main-text">
+            <img src="img/pocky-logo1.png" alt="img-centro">
+            <p> Pocky é um palito de biscoito coberto com chocolate que oferece o 
+              equilíbrio perfeito entre o chocolate cremoso e a crocância do biscoito. 
+              É um lanche fácil de compartilhar que pode ser apreciado a qualquer momento, 
+              em qualquer lugar, com amigos e familiares.</p>
+            <button>ADQUIRA O SEU</button>
+          </div>
+        </div>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script type="text/javascript">
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+          });
+        
+          function alterarImagemPrincipal(imagem) {
+            document.getElementById('imagemPrincipal').src = imagem;
+          }
+        </script>
+
+        <div class="social-links">
+          <a href="https://www.instagram.com/pockyusa/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/PockyUSA"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/pockyusa"><i class="fab fa-twitter"></i></a>
+          <a href="mailto:contato@meusite.com"><i class="far fa-envelope"></i></a>
+        </div>
+        
+    </div>
+
+
+</body>
+
+</html>
